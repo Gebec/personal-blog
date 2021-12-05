@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "How to include custom components in Aurelia"
 date: 2021-12-04
 author: "Gebec"
 tags: ["Aurelia", "Guide"]
