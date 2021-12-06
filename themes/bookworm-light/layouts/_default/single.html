@@ -3,14 +3,14 @@
 <!-- checking blog -->
 {{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
 
-<section class="section-sm">
+<section class="section-sm flex-grow-1">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
         <div class="text-center mb-5">
           <h3 class="h2 mb-4 post-title">{{.Title}}</h3>
           <ul class="card-meta list-inline">
-            <li class="list-inline-item">
+            <!-- <li class="list-inline-item">
               <a href="#!" class="card-meta-author">
                 {{ with .Site.GetPage (.Params.author | urlize | lower) }}
                 <a href="{{.Permalink}}" class="card-meta-author">
@@ -20,7 +20,7 @@
                 {{ end }}
               </a>
             </li>
-            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">|</li> -->
             <li class="list-inline-item">
               <span>{{.PublishDate.Format "02 January 2006"}}</span>
             </li>
@@ -103,7 +103,7 @@
 
 {{ else }}
 
-<section class="section-sm">
+<section class="section-sm flex-grow-1">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">

@@ -76,18 +76,16 @@
 
 
 {{ if $logoDarkPath }}
-<img loading="prelaod" decoding="async" class="img-fluid only-light" width="{{replace $logoWidth `x` `` | default $logoDefaultWidth}}" height="{{$logoDefaultHeight}}" src="{{.Scratch.Get `logo`}}" alt="{{ site.Title }}" onerror="this.onerror=null;this.src='{{.Scratch.Get `logo_fallback`}}'">
+<img loading="preload" decoding="async" class="img-fluid only-light" width="{{replace $logoWidth `x` `` | default $logoDefaultWidth}}" height="{{$logoDefaultHeight}}" src="{{.Scratch.Get `logo`}}" alt="{{ site.Title }}" onerror="this.onerror=null;this.src='{{.Scratch.Get `logo_fallback`}}'">
 
-<img loading="prelaod" decoding="async" class="img-fluid only-dark" width="{{replace $logoWidth `x` `` | default $logoDefaultWidth}}" height="{{$logoDefaultHeight}}" src="{{.Scratch.Get `logo_dark`}}" alt="{{ site.Title }}" onerror="this.onerror=null;this.src='{{.Scratch.Get `logo_dark_fallback`}}'">
+<img loading="preload" decoding="async" class="img-fluid only-dark" width="{{replace $logoWidth `x` `` | default $logoDefaultWidth}}" height="{{$logoDefaultHeight}}" src="{{.Scratch.Get `logo_dark`}}" alt="{{ site.Title }}" onerror="this.onerror=null;this.src='{{.Scratch.Get `logo_dark_fallback`}}'">
 
 {{ else if $logoPath }}
 
-<img loading="prelaod" decoding="async" class="img-fluid" width="{{replace $logoWidth `x` `` | default $logoDefaultWidth}}" height="{{$logoDefaultHeight}}" src="{{.Scratch.Get `logo`}}" alt="{{ site.Title }}" onerror="this.onerror=null;this.src='{{.Scratch.Get `logo_fallback`}}'">
+<img loading="preload" decoding="async" class="img-fluid" width="{{replace $logoWidth `x` `` | default $logoDefaultWidth}}" height="{{$logoDefaultHeight}}" src="{{.Scratch.Get `logo`}}" alt="{{ site.Title }}" onerror="this.onerror=null;this.src='{{.Scratch.Get `logo_fallback`}}'">
 
 <!-- logo text -->
 {{ else if site.Params.logo_text }}
 {{ site.Params.logo_text | markdownify }}
 <!-- logo title -->
-{{ else }}
-<strong class="text-danger">`{{$logoPath}}` doesn't exist</strong>
 {{ end }} <!-- / checking logo path -->

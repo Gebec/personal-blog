@@ -2,7 +2,7 @@
 <html lang="{{ site.LanguageCode | default `en-US` }}">
 {{ partial "head.html" . }}
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   {{ partialCached "preloader.html" . }}
   {{ partial "header.html" . }}
   {{if and (not .IsHome) (ne .Section "blog") (ne .Permalink (`about/` | absURL)) (ne .Permalink (`search/` | absURL)) }}
