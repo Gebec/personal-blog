@@ -2,6 +2,7 @@
 title: "How to include custom components in Aurelia"
 date: 2021-12-04
 author: "Gebec"
+techs: ["au"]
 tags: ["Aurelia", "Guide"]
 categories: ["Aurelia", "Tips"]
 draft: false

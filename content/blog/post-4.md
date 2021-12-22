@@ -1,5 +1,5 @@
 ---
-title: "Meet lobotomized owl (selector)"
+title: "Meet lobotomized owl"
 date: 2021-12-14
 author: "Gebec"
 techs: ["css"]

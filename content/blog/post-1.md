@@ -2,6 +2,7 @@
 title: "How to define an array of minimal length in Typescript"
 date: 2021-12-01
 author: "Gebec"
+techs: ["ts"]
 tags: ["Typescript", "Tips", "Short"]
 categories: ["Typescript", "Tips"]
 draft: false

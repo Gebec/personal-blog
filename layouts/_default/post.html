@@ -1,0 +1,27 @@
+<article class="card post-card">
+  <div class="card-body">
+    <ul class="card-meta list-inline mb-2">
+
+      {{ range $tech := .Params.techs }}
+        {{ $path := printf "%s" ".jpg" | printf "%s%s" $tech | printf "%s%s" "images/tech/" | printf "%s" }}
+        <li class="list-inline-item">
+          {{ partial "image.html" (dict "Src" $path "Size" "20x20" "Class" "rounded") }}
+        </li>
+      {{end}}
+      <li class="list-inline-item">
+        <span>{{.PublishDate.Format "02 Jan, 2006"}}</span>
+      </li>
+      <li class="list-inline-item">
+        <ul class="card-meta-tag list-inline">
+          {{range .Params.tags}}
+          <li class="list-inline-item"><a href="{{site.BaseURL}}tags/{{.| urlize}}">{{.}}</a></li>
+          {{end}}
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="{{.Permalink}}">{{.Title}}</a>
+    </h3>
+    <p>{{ .Plain | truncate 150 }}</p>
+  </div>
+</article>
