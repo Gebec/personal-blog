@@ -35,15 +35,17 @@ Singleton.instance = this;
 This code should be placed in a constructor so it can return Singleton instance every time (second and any other time) the constructor is called.
 
 *Full code example*
-{{< codepen id="PoEORdg" >}}
+{{< codepen id="PoEORdg" tab="js" >}}
 
 ##### Function singleton
-Singleton can be also implemented in functional-based javascript. But it is not used as often as in class-based JavaScript. Usually the framework you use has its own way how to implement *'singleton'* (f.e. [useContext](https://reactjs.org/docs/context.html) hook in React).
+Singleton can be also implemented in functional-based javascript. But it is not used as often as in class-based JavaScript. Usually the framework you use, has its own way how to implement *'singleton'* (f.e. [useContext](https://reactjs.org/docs/context.html) hook in React).
 
 The singleton as function must be an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) that will return the same object all the time.
 ```js
 // private property hidden in scope
 let instance;
+
+
 // publicly accessible logic
 if (!instance) {
     instance = getInstance()
@@ -51,8 +53,10 @@ if (!instance) {
 return instance;
 ```
 
+The `instance` property is hidden in a scope of the IIFE and we are not able to access or modify it directly. The `instance` should be returned from publicly accessible method. In the code example below, the IIEF returns function getInstance() that creates `instance` for the first time it is accessed and always returns it. And 'instance' is just another function with some custom logic. In this case public method and getter of a private random number.
+
 *Full code example*
-{{< codepen id="JjMOvdZ" >}}
+{{< codepen id="JjMOvdZ" tab="js" >}}
 
 
 ### Pros of singletons
@@ -61,6 +65,6 @@ return instance;
 
 ### Cons of singletons
 - In most cases used unnecessarily
-- Violates [Single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). The singleton is responsible for its normal tasks, but it must also ensure that only one instance is created.
+- Violates [Single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). The singleton is responsible for its normal tasks, but it must also ensure that only one instance is created
 - Can mask bad design, f.e. when the components know too much about each other
-- Can be hard to unit test the code that uses singletons when creating mocked objects.
+- Can be hard to unit test the code that uses singletons when creating mocked objects
