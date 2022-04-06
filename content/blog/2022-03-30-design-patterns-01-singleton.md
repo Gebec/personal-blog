@@ -1,5 +1,5 @@
 ---
-title: "Desing patterns in JS: Singleton"
+title: "Design patterns in JS: Singleton"
 date: 2022-04-02
 author: "Gebec"
 techs: ["js"]
