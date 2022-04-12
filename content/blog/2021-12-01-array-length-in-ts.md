@@ -25,19 +25,19 @@ type ArrayOfTwo<T> = { 0: T, 1: T};
 And the extension can be done with intersection or with spread operator.
 ```js
 // Intersection
-type ArrayOfOneOrMore<T> = [T] & T[];
-type ArrayOfOneOrMore2<T> = ArrayOfOne & T[];
-type ArrayOfOneOrMore3<T> = { 0: T } & T[];
+type ArrayOfOneAndMore<T> = [T] & T[];
+type ArrayOfOneAndMore2<T> = ArrayOfOne & T[];
+type ArrayOfOneAndMore3<T> = { 0: T } & T[];
 
 // Spread operator
-type ArrayOfOneOrMore<T> = [T, ...T[]];
-type ArrayOfOneOrMore2<T> = [ArrayOfOne, ...T[]];
-type ArrayOfOneOrMore3<T> = [{ 0: T }, ...T[]];
+type ArrayOfOneAndMore<T> = [T, ...T[]];
+type ArrayOfOneAndMore2<T> = [ArrayOfOne, ...T[]];
+type ArrayOfOneAndMore3<T> = [{ 0: T }, ...T[]];
 ```
 
 We can now use the types to ensure that the array has the required minimal length.
 ```js
-function example(items: ArrayOfOneOrMore<number>) {}
+function example(items: ArrayOfOneAndMore<number>) {}
 
 // Error: Source has 0 element(s) but target requires 1.
 example([]);
