@@ -1,10 +1,10 @@
 ---
 title: "Using modern CSS horizontal centering techniques"
-date: 2021-12-14
+date: 2022-04-14
 author: "Gebec"
 techs: ["css"]
-tags: ["CSS", "Short"]
-categories: ["CSS"]
+tags: ["CSS", "Tips", "Short"]
+categories: ["CSS", "Tips"]
 draft: false
 ---
 
