@@ -1,6 +1,6 @@
 ---
 title: "Introduction to design patterns in JS"
-date: 2022-04-02
+date: 2022-04-06
 author: "Gebec"
 techs: ["js"]
 tags: ["Javascript", "Design Patterns"]
