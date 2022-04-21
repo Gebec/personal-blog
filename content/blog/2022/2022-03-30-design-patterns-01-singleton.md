@@ -38,7 +38,7 @@ This code should be placed in a constructor so it can return Singleton instance 
 {{< codepen id="PoEORdg" tab="js" >}}
 
 ##### Function singleton
-Singleton can be also implemented in functional-based javascript. But it is not used as often as in class-based JavaScript. Usually the framework you use, has its own way how to implement *'singleton'* (f.e. [useContext](https://reactjs.org/docs/context.html) hook in React).
+Singleton can be also implemented in functional-based javascript. But it is not used as often as in class-based JavaScript. Usually the framework you use, has its own way how to implement *'singleton'* (i.e. [useContext](https://reactjs.org/docs/context.html) hook in React).
 
 The singleton as function must be an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) that will return the same object all the time.
 ```js
@@ -66,5 +66,5 @@ The `instance` property is hidden in a scope of the IIFE and we are not able to 
 ### Cons of singletons
 - In most cases used unnecessarily
 - Violates [Single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). The singleton is responsible for its normal tasks, but it must also ensure that only one instance is created
-- Can mask bad design, f.e. when the components know too much about each other
+- Can mask bad design, i.e. when the components know too much about each other
 - Can be hard to unit test the code that uses singletons when creating mocked objects
