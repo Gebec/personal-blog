@@ -3,7 +3,7 @@ title: "How to create enums in JS or TS"
 date: 2022-06-07
 author: "Gebec"
 techs: ["js"]
-tags: ["Javascript", "Typescript" "Short"]
+tags: ["Javascript", "Typescript", "Short"]
 categories: ["Javascript"]
 draft: false
 ---
