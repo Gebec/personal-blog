@@ -1,6 +1,6 @@
 ---
 title: "Defer script attribute"
-date: 2022-04-31
+date: 2022-04-30
 author: "Gebec"
 techs: ["html"]
 tags: ["HTML", "Short"]
