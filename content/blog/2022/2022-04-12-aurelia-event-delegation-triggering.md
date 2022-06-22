@@ -4,7 +4,7 @@ date: 2022-04-12
 author: "Gebec"
 techs: ["au"]
 tags: ["Aurelia", "Short"]
-categories: ["Aurelia",]
+categories: ["Aurelia"]
 draft: false
 ---
 
