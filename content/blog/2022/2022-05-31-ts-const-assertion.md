@@ -2,7 +2,7 @@
 title: "Typescript const assertion "
 date: 2022-05-31
 author: "Gebec"
-techs: ["js"]
+techs: ["ts"]
 tags: ["Typescript"]
 categories: ["Typescript", "Guide"]
 draft: false

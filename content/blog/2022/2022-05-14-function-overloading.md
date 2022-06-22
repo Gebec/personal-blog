@@ -2,7 +2,7 @@
 title: "Function overloading in Typescript"
 date: 2022-05-14
 author: "Gebec"
-techs: ["js"]
+techs: ["ts"]
 tags: ["Typescript"]
 categories: ["Typescript", "Guide"]
 draft: false
